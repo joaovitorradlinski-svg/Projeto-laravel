@@ -1,0 +1,19 @@
+@extends('layouts.app')
+
+@section('title', $local->nome)
+
+@section('content')
+<div class="py-6 px-4 max-w-3xl">
+    <div class="bg-[#181a20] shadow sm:rounded-lg p-6">
+        @if($local->imagem)
+            <img src="{{ asset('storage/'.$local->imagem) }}" alt="{{ $local->nome }}" class="mb-4 w-32 h-32 object-cover rounded">
+        @endif
+        <h2 class="text-3xl font-bold text-purple-400">{{ $local->nome }}</h2>
+        <p class="mt-4 text-gray-300">{{ $local->descricao }}</p>
+        <p class="mt-3 text-sm text-gray-400">Campanha: {{ $local->campanha->titulo ?? '—' }}</p>
+    </div>
+    <a href="{{ route('locais.index') }}" class="inline-block mt-6 text-purple-400 hover:underline">
+        Voltar aos Locais
+    </a>
+</div>
+@endsection
