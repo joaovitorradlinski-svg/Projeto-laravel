@@ -19,7 +19,7 @@ class StorePersonagemRequest extends FormRequest
             'classe' => 'required|string|max:255',
             'raca' => 'required|string|max:255',
             'descricao' => 'nullable|string',
-            'imagem' => 'nullable|image|max:2048',
+            'imagem' => 'nullable|image|max:10000',
         ];
     }
 }
