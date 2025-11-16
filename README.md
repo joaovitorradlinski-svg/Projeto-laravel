@@ -1,3 +1,7 @@
+RPGConfig
+
+Aplição de gerenciamento de campanhas, locais e personagens de rpg de mesa
+
 🔧 Pré-requisitos
 
 Antes de iniciar, instale:
